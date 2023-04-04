@@ -77,7 +77,7 @@ describe('SchemaValidator', () => {
       const obj = {
         name: 'John',
         age: '30', // should be a number, but is a string
-        car: null, // should be an object, but is a string
+        car: null, // should be an object, but is null
       };
 
       expect(schemaValidator.validate(schema, obj)).toBe(false);
