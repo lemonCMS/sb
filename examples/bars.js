@@ -33,5 +33,5 @@ const barObjF = {
   ],
 };
 
-console.table(barObj);
+console.table(barObjF);
 console.log('\r\nValidates false: ', schemaValidator.validate(barSchema, barObjF));

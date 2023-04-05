@@ -31,5 +31,5 @@ const carObjF = {
   extras: ['LCI', 'KW Coilovers'],
 };
 
-console.table(carObj);
+console.table(carObjF);
 console.log('\r\nValidates false: ', schemaValidator.validate(carSchema, carObjF));
