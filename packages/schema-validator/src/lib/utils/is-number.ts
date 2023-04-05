@@ -4,5 +4,5 @@
  * @returns A boolean indicating whether the given value is a number or not.
  */
 export const isNumber = (value: any): boolean => {
-  return typeof value === 'number' && !isNaN(value);
+  return typeof value === 'number' && !isNaN(value) && isFinite(value);
 };

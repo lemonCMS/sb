@@ -14,6 +14,7 @@ describe('isNumber', () => {
     expect(isNumber(NaN)).toBe(false);
     expect(isNumber({ prop: 'value' })).toBe(false);
     expect(isNumber([1, 2, 3])).toBe(false);
+    expect(isNumber(1 / 0)).toBe(false);
   });
 
   it('should return false if given a boolean value', () => {
