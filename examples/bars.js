@@ -1,6 +1,8 @@
 const { SchemaValidator } = require('../dist/packages/schema-validator/src/lib/schema-validator');
 
-const schemaValidator = new SchemaValidator();
+const schemaValidator = new SchemaValidator({
+  type: 'messageValidator',
+});
 
 const barSchema = {
   name: 'string',
@@ -35,3 +37,4 @@ const barObjF = {
 
 console.table(barObjF);
 console.log('\r\nValidates false: ', schemaValidator.validate(barSchema, barObjF));
+console.table(schemaValidator.getErrorMessages());
